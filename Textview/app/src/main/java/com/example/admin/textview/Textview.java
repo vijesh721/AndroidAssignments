@@ -13,20 +13,32 @@ import android.widget.Toast;
 
 public class Textview extends AppCompatActivity {
     private EditText eText;
+    private TextView ttext;
     Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_textview);
-        eText=(EditText)findViewById(R.id.edittext);
-        btn = (Button) findViewById(R.id.button);
+        eText=(EditText)findViewById(R.id.editText);
+        btn=(Button)findViewById(R.id.button);
+        ttext=(TextView)findViewById(R.id.textView1);
         btn.setOnClickListener(new OnClickListener(){
-            public void onClick(View v) {
-                String str = eText.getText().toString();
-                Toast msg = Toast.makeText(getBaseContext(), str, Toast.LENGTH_LONG);
-
+            public void onClick(View v)
+            {
+                String str=eText.getText().toString();
+              ttext.setText(str);
             }
         });
+
+        //btn = (Button) findViewById(R.id.button);
+       //btn.setOnClickListener(new OnClickListener(){
+            //public void onClick(View v) {
+                //String str = eText.getText().toString();
+                //Toast msg = Toast.makeText(getBaseContext(), str, Toast.LENGTH_LONG);
+
+
+            //}
+        //});
     }
 
     @Override
