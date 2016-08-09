@@ -40,14 +40,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.menu_search:
                 Toast.makeText(MainActivity.this,"Search is Selected",Toast.LENGTH_SHORT).show();
                 return  true;
-            case R.id.menu_share:
-                Toast.makeText(MainActivity.this,"Share is Selected",Toast.LENGTH_SHORT).show();
-                return  true;
             case R.id.menu_delete:
                 Toast.makeText(MainActivity.this,"Delete is Selected",Toast.LENGTH_SHORT).show();
-                return  true;
-            case R.id.menu_preferences:
-                Toast.makeText(MainActivity.this,"Preferences is Selected",Toast.LENGTH_SHORT).show();
                 return  true;
             default:
                 return super.onOptionsItemSelected(item);
